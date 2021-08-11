@@ -1,15 +1,14 @@
 import gql from 'graphql-tag';
 
-export const GET_ME = gql`
+export const QUERY_ME = gql`
   {
     me {
       _id
-			bookCount
       username
       email
       savedBooks {
         bookId
-				link
+      link
         authors
         image
         description
@@ -18,6 +17,5 @@ export const GET_ME = gql`
     }
   }
 `;
-
 
 // https://graphql.org/learn/queries/
